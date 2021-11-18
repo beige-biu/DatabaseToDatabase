@@ -1,0 +1,5 @@
+[2021-10-21 08:20:21]
+
+网络传输: TCP 传输地址连接故障   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+

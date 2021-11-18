@@ -1,0 +1,10 @@
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\bin\Release\BKYL.Jobs.Base.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\bin\Release\BKYL.Jobs.Base.pdb
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\bin\Release\BFES.DataAccess.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\bin\Release\SharpConfig.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\bin\Release\Oracle.ManagedDataAccess.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\bin\Release\MySql.Data.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\obj\Release\BKYL.Jobs.Base.csproj.CoreCompileInputs.cache
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\obj\Release\BKYL.Jobs.Base.csproj.CopyComplete
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\obj\Release\BKYL.Jobs.Base.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\obj\Release\BKYL.Jobs.Base.pdb

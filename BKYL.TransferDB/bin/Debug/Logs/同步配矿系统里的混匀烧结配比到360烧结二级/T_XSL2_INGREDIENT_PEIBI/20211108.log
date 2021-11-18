@@ -1,0 +1,20 @@
+[2021-11-08 11:08:01]
+
+ORA-12899: 列 "ORAL2DB_SINSTER"."T_XSL2_INGREDIENT_PEIBI"."MATERIAL_CODE" 的值太大 (实际值: 36, 最大值: 16)   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 11:13:04]
+
+连接已经是本地事务处理或分布式事务处理的一部分   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 11:18:58]
+
+未将对象引用设置到对象的实例。   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 11:20:05]
+
+ORA-12899: 列 "ORAL2DB_SINSTER"."T_XSL2_INGREDIENT_PEIBI"."MATERIAL_CODE" 的值太大 (实际值: 36, 最大值: 16)   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+

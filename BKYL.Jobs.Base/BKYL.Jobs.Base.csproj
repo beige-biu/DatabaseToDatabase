@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2DF0574-2E61-40C9-8419-F7C52370D294}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BKYL.Jobs.Base</RootNamespace>
+    <AssemblyName>BKYL.Jobs.Base</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\BKYL.TransferDB\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BFES.DataAccess">
+      <HintPath>..\DLL\BFES.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpConfig">
+      <HintPath>..\DLL\SharpConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\JobFactory.cs" />
+    <Compile Include="Common\JobType.cs" />
+    <Compile Include="Interface\ITransferDBTask.cs" />
+    <Compile Include="Job\BaseJob.cs" />
+    <Compile Include="Job\DTDConfig.cs" />
+    <Compile Include="Job\Job_CalcTable_01H.cs" />
+    <Compile Include="Job\Job_CalFormula.cs" />
+    <Compile Include="Job\Job_ClearLog.cs" />
+    <Compile Include="Job\Job_FilterInsertByFlag.cs" />
+    <Compile Include="Job\Job_FilterInsert.cs" />
+    <Compile Include="Job\Job_FilterInsertByDel.cs" />
+    <Compile Include="Job\Job_FilterInsertUpdateDel.cs" />
+    <Compile Include="Job\Job_FullCopy.cs" />
+    <Compile Include="Job\JudgeAlarm.cs" />
+    <Compile Include="Models\ALARM_INFO.cs" />
+    <Compile Include="Models\ConfigClearLog.cs" />
+    <Compile Include="Models\CONFIG_ALARM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ConvertExtensions.cs" />
+    <Compile Include="Utils\ConvertHelper.cs" />
+    <Compile Include="Utils\CustomModelInfo.cs" />
+    <Compile Include="Utils\DalFactory.cs" />
+    <Compile Include="Utils\FileHelp.cs" />
+    <Compile Include="Utils\GlobalObject.cs" />
+    <Compile Include="Utils\LableExtension.cs" />
+    <Compile Include="Utils\Log.cs" />
+    <Compile Include="Utils\LogString.cs" />
+    <Compile Include="Utils\ReadConfig.cs" />
+    <Compile Include="Utils\ReflectFactory.cs" />
+    <Compile Include="Utils\ReflectionDelegated.cs" />
+    <Compile Include="Utils\RichTextBoxExtension.cs" />
+    <Compile Include="Utils\UtilsConvertTime.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

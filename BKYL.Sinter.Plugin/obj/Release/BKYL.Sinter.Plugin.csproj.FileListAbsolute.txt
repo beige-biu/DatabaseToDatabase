@@ -1,0 +1,14 @@
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\bin\Release\BKYL.Sinter.Plugin.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\bin\Release\BKYL.Sinter.Plugin.pdb
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\bin\Release\BFES.DataAccess.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\bin\Release\BKYL.Jobs.Base.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\bin\Release\MathNet.Numerics.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\bin\Release\SharpConfig.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\bin\Release\Oracle.ManagedDataAccess.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\bin\Release\MySql.Data.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\bin\Release\BKYL.Jobs.Base.pdb
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\obj\Release\BKYL.Sinter.Plugin.csprojAssemblyReference.cache
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\obj\Release\BKYL.Sinter.Plugin.csproj.CoreCompileInputs.cache
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\obj\Release\BKYL.Sinter.Plugin.csproj.CopyComplete
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\obj\Release\BKYL.Sinter.Plugin.dll
+G:\400烧结智能系统\DatabaseToDatabase\BKYL.Sinter.Plugin\obj\Release\BKYL.Sinter.Plugin.pdb

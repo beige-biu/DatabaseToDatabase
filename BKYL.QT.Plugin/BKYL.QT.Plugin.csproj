@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4EB24DC-55F2-42F7-911B-2ED879CBDE5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BKYL.QT.Plugin</RootNamespace>
+    <AssemblyName>BKYL.QT.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\BKYL.TransferDB\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BFES.DataAccess">
+      <HintPath>..\DLL\BFES.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="BFES.Utils">
+      <HintPath>..\DLL\BFES.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Hprose.Client">
+      <HintPath>..\DLL\Hprose.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interface\RPCReaderInterface.cs" />
+    <Compile Include="Job\Job_ALARMINFO.cs" />
+    <Compile Include="Job\Job_CalProduct_QT.cs" />
+    <Compile Include="Job\Job_CalProportion_QT.cs" />
+    <Compile Include="Job\Job_CalQualityDiagonsis.cs" />
+    <Compile Include="Job\Job_CalQualityRelations_QT.cs" />
+    <Compile Include="Job\Job_CalRoastingScore.cs" />
+    <Compile Include="Job\Job_L2_ANA.cs" />
+    <Compile Include="Job\Job_Update.cs" />
+    <Compile Include="Models\ALARM_INFORMATION.cs" />
+    <Compile Include="Models\L2_MATERIAL_ANA.cs" />
+    <Compile Include="Models\L2_PELLET_ANA.cs" />
+    <Compile Include="Models\L3TOL2ANALYSISDATA.cs" />
+    <Compile Include="Models\L3_ANALYSI.cs" />
+    <Compile Include="Models\L3_MATERIAL.cs" />
+    <Compile Include="Models\MaterialCodeSp.cs" />
+    <Compile Include="Models\MATERIAL_STORAGE_BIN.cs" />
+    <Compile Include="Models\PAR_QUALITY_DIAGN.cs" />
+    <Compile Include="Models\PAR_ROASTER.cs" />
+    <Compile Include="Models\PCA_RESULT.cs" />
+    <Compile Include="Models\R_MATERIAL_PLC_01M.cs" />
+    <Compile Include="Models\R_PELLET_PLC_01M.cs" />
+    <Compile Include="Models\R_PRODUCT_PLC_01M.cs" />
+    <Compile Include="Models\R_ROASTER_PLC_01M.cs" />
+    <Compile Include="Models\TC_CHANGE_RESULT.cs" />
+    <Compile Include="Models\TC_MATERIALR_BIN.cs" />
+    <Compile Include="Models\TC_PCA_RESULT.cs" />
+    <Compile Include="Models\TC_POPCAL_CONSUME_01M.cs" />
+    <Compile Include="Models\TC_POPCAL_RESULT_CONSUME.cs" />
+    <Compile Include="Models\TC_QUALITY_DIAGN.cs" />
+    <Compile Include="Models\TC_QUALITY_DIAGN_A.cs" />
+    <Compile Include="Models\TC_QUALITY_DIAGN_B.cs" />
+    <Compile Include="Models\TC_QUALITY_REAT.cs" />
+    <Compile Include="Models\TC_RESULT.cs" />
+    <Compile Include="Models\TC_ROASTER_BAS_10M.cs" />
+    <Compile Include="Models\TC_ROASTER_WAVE_10M.cs" />
+    <Compile Include="Models\TC_RUN_RATE.cs" />
+    <Compile Include="Models\TC_SHIFT_NUMBER.cs" />
+    <Compile Include="Models\TD_AUT_PELLE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BKYL.Jobs.Base\BKYL.Jobs.Base.csproj">
+      <Project>{d2df0574-2e61-40c9-8419-f7c52370d294}</Project>
+      <Name>BKYL.Jobs.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

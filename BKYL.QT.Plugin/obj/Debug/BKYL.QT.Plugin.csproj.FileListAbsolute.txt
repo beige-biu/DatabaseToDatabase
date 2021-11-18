@@ -1,0 +1,14 @@
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\bin\Debug\BKYL.QT.Plugin.dll
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\bin\Debug\BKYL.QT.Plugin.pdb
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\bin\Debug\BFES.DataAccess.dll
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\bin\Debug\BFES.Utils.dll
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\bin\Debug\BKYL.Jobs.Base.dll
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\bin\Debug\SharpConfig.dll
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\bin\Debug\MySql.Data.dll
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\bin\Debug\BKYL.Jobs.Base.pdb
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.TransferDB\bin\Debug\BKYL.QT.Plugin.dll
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.TransferDB\bin\Debug\BKYL.QT.Plugin.pdb
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\obj\Debug\BKYL.QT.Plugin.csprojResolveAssemblyReference.cache
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\obj\Debug\BKYL.QT.Plugin.dll
+D:\北科亿力\烧结二级系统\定时器新路径代码\BKYL.QT.Plugin\obj\Debug\BKYL.QT.Plugin.pdb

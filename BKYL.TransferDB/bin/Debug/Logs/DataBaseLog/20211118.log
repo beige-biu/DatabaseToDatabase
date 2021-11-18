@@ -1,0 +1,6 @@
+[2021-11-18 10:35:20]
+
+ORA-00933: SQL ÃüÁîÎ´ÕýÈ·½áÊø
+
+¡¾SQL:¡¿update  T_MATERIAL_TEAM_YIELD   set TESTFLAG  =1  where TEAM_BEGIN_TIME>=to_date('2021-10-19 00:00:01','yyyy-mm-dd hh24:mi:ss') and TEAM_BEGIN_TIME<to_date('2021-11-18 03:00:01','yyyy-mm-dd hh24:mi:ss')  andTESTFLAG  = 0 and TESTFLAG != 1
+

@@ -1,0 +1,10 @@
+[2021-11-12 11:16:29]
+
+ORA-01740: 标识符中缺失双引号   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-12 11:18:08]
+
+ORA-01740: 标识符中缺失双引号   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.TransferDB\FrameManage.cs:行号 179
+

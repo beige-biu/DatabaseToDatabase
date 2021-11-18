@@ -1,0 +1,157 @@
+[2021-11-08 11:00:41]
+
+ORA-00904: "MAT_RATE": 标识符无效
+
+【SQL:】SELECT IT_PLAN_NO as INGREDIENT_NO ,MAT_PROD_CNAME as MATERIAL_NAME ,MAT_BATCH_NO as MATERIAL_CODE ,MAT_RATE as MATERIAL_RATE ,CREATE_TIME as SENDER_TIME  FROM  TPSIT24_SJK  alias  where CREATE_TIME>=to_date('2021-11-05 08:00:02','yyyy-mm-dd hh24:mi:ss') and CREATE_TIME<to_date('2021-11-08 10:57:01','yyyy-mm-dd hh24:mi:ss') 
+
+[2021-11-08 11:08:01]
+
+ORA-12899: 列 "ORAL2DB_SINSTER"."T_XSL2_INGREDIENT_PEIBI"."MATERIAL_CODE" 的值太大 (实际值: 36, 最大值: 16)
+
+【SQL:】 insert into T_XSL2_INGREDIENT_PEIBI ( INGREDIENT_NO,MATERIAL_NAME,MATERIAL_CODE,MATERIAL_BILI,DATE_LURU ) select  'D2020100035
+D202010','巴西卡粉
+','D0601001020BRA0G
+D0601001020BRA0G
+','15',to_date('2021-11-08 10:53:26','yyyy-mm-dd hh24:mi:ss') from dual  union all select  'D2020100035
+','智利精粉
+','1111','0',to_date('2021-11-08 10:53:26','yyyy-mm-dd hh24:mi:ss') from dual 
+
+[2021-11-08 11:08:04]
+
+ORA-00904: "DATE_LURU": 标识符无效
+
+【SQL:】select max(DATE_LURU) from T_SINTER_MATERIAL_RATIO 
+
+[2021-11-08 11:08:07]
+
+ORA-00904: "DATE_LURU": 标识符无效
+
+【SQL:】select max(DATE_LURU) from T_SINTER_MATERIAL_RATIO_HY 
+
+[2021-11-08 11:12:22]
+
+ORA-12899: 列 "ORAL2DB_SINSTER"."T_XSL2_INGREDIENT_PEIBI"."MATERIAL_CODE" 的值太大 (实际值: 36, 最大值: 16)
+
+【SQL:】 insert into T_XSL2_INGREDIENT_PEIBI ( INGREDIENT_NO,MATERIAL_NAME,MATERIAL_CODE,MATERIAL_BILI,DATE_LURU ) select  'D2020100035
+D202010','巴西卡粉
+','D0601001020BRA0G
+D0601001020BRA0G
+','15',to_date('2021-11-08 10:53:26','yyyy-mm-dd hh24:mi:ss') from dual  union all select  'D2020100035
+','智利精粉
+','1111','0',to_date('2021-11-08 10:53:26','yyyy-mm-dd hh24:mi:ss') from dual 
+
+[2021-11-08 11:18:12]
+
+ORA-12899: 列 "ORAL2DB_SINSTER"."T_XSL2_INGREDIENT_PEIBI"."MATERIAL_CODE" 的值太大 (实际值: 36, 最大值: 16)
+
+【SQL:】 insert into T_XSL2_INGREDIENT_PEIBI ( INGREDIENT_NO,MATERIAL_NAME,MATERIAL_CODE,MATERIAL_BILI,DATE_LURU ) select  'D2020100035
+D202010','巴西卡粉
+','D0601001020BRA0G
+D0601001020BRA0G
+','15',to_date('2021-11-08 10:53:26','yyyy-mm-dd hh24:mi:ss') from dual  union all select  'D2020100035
+','智利精粉
+','1111','0',to_date('2021-11-08 10:53:26','yyyy-mm-dd hh24:mi:ss') from dual 
+
+[2021-11-08 11:20:04]
+
+ORA-12899: 列 "ORAL2DB_SINSTER"."T_XSL2_INGREDIENT_PEIBI"."MATERIAL_CODE" 的值太大 (实际值: 36, 最大值: 16)
+
+【SQL:】 insert into T_XSL2_INGREDIENT_PEIBI ( INGREDIENT_NO,MATERIAL_NAME,MATERIAL_CODE,MATERIAL_BILI,DATE_LURU ) select  'D2020100035
+','巴西卡粉
+','D0601001020BRA0G
+D0601001020BRA0G
+','15',to_date('2021-11-08 10:53:26','yyyy-mm-dd hh24:mi:ss') from dual  union all select  'D2020100035
+','智利精粉
+','1111','0',to_date('2021-11-08 10:53:26','yyyy-mm-dd hh24:mi:ss') from dual 
+
+[2021-11-08 12:35:01]
+
+ORA-00904: "DATE_LURU": 标识符无效
+
+【SQL:】select max(DATE_LURU) from T_SINTER_MATERIAL_RATIO 
+
+[2021-11-08 12:35:03]
+
+ORA-00904: "DATE_LURU": 标识符无效
+
+【SQL:】select max(DATE_LURU) from T_SINTER_MATERIAL_RATIO_HY 
+
+[2021-11-08 12:36:01]
+
+ORA-00904: "DATE_LURU": 标识符无效
+
+【SQL:】select max(DATE_LURU) from T_SINTER_MATERIAL_RATIO 
+
+[2021-11-08 12:36:01]
+
+ORA-00904: "DATE_LURU": 标识符无效
+
+【SQL:】select max(DATE_LURU) from T_SINTER_MATERIAL_RATIO_HY 
+
+[2021-11-08 12:38:04]
+
+ORA-00904: "MAT_RATE": 标识符无效
+
+【SQL:】SELECT IT_PLAN_NO as PBD_NO ,MAT_PROD_CNAME as MATERIAL_NAME ,MAT_BATCH_NO as MATERIAL_CODE ,MAT_RATE as MATERIAL_PERCENTAGE ,CREATE_TIME as RECORD_DATE  FROM  TPSIT24_SJK  alias  where CREATE_TIME>=to_date('2021-11-03 14:00:01','yyyy-mm-dd hh24:mi:ss') and CREATE_TIME<to_date('2021-11-08 10:57:01','yyyy-mm-dd hh24:mi:ss') 
+
+[2021-11-08 13:38:04]
+
+ORA-12899: 列 "XCT1"."TPSIT14_PK"."COMM_RECV_TIME" 的值太大 (实际值: 19, 最大值: 14)
+
+【SQL:】 insert into TPSIT14_PK ( UNIT_NO,IT_PLAN_NO,STACK_DRY_QTY,MAT_BATCH_NO,MAT_PROD_CNAME,MAT_RATE,PRICE,H2O,TFE,SIO2,CAO,MGO,AL2O3,P,S,K2O,NA2O,LOI,COMM_RECV_TIME ) select  '2','D2020100035
+','0','22222','巴西卡粉
+','15','0','0','0','0','0','0','0','0','0','0','0','0','2021-11-08 10:53:26' from dual  union all select  '2','D2020100035
+','0','1111','智利精粉
+','0','0','0','0','0','0','0','0','0','0','0','0','0','2021-11-08 10:53:26' from dual 
+
+[2021-11-08 13:40:02]
+
+ORA-01481: 无效的数字格式模型
+
+【SQL:】select max(to_char(COMM_RECV_TIME,'yyyy-mm-dd hh24:mi:ss')) from TPSIT14_PK 
+
+[2021-11-08 13:46:03]
+
+ORA-01861: 文字与格式字符串不匹配
+
+【SQL:】select max(to_date(CREATE_TIME,'yyyy-mm-dd hh24:mi:ss')) from  TPSIT14_HY  alias
+
+[2021-11-08 13:55:01]
+
+ORA-01861: 文字与格式字符串不匹配
+
+【SQL:】select max(to_date(CREATE_TIME,'yyyy-mm-dd hh24:mi:ss')) from  TPSIT14_HY  alias
+
+[2021-11-08 13:56:21]
+
+ORA-01861: 文字与格式字符串不匹配
+
+【SQL:】select max(to_date(CREATE_TIME,'yyyy-mm-dd hh24:mi:ss')) from  TPSIT14_HY  alias
+
+[2021-11-08 14:01:05]
+
+ORA-01861: 文字与格式字符串不匹配
+
+【SQL:】select max(to_date(CREATE_TIME,'yyyy-mm-dd hh24:mi:ss')) from  TPSIT14_HY  alias
+
+[2021-11-08 14:04:10]
+
+ORA-12899: 列 "XCT1"."TPSIT14_PK"."COMM_RECV_TIME" 的值太大 (实际值: 19, 最大值: 14)
+
+【SQL:】 insert into TPSIT14_PK ( UNIT_NO,IT_PLAN_NO,STACK_DRY_QTY,MAT_BATCH_NO,MAT_PROD_CNAME,MAT_RATE,PRICE,H2O,TFE,SIO2,CAO,MGO,AL2O3,P,S,K2O,NA2O,LOI,COMM_RECV_TIME ) select  '2','D2020100035
+','0','22222','巴西卡粉
+','15','0','0','0','0','0','0','0','0','0','0','0','0','2021-11-08 10:53:26' from dual  union all select  '2','D2020100035
+','0','1111','智利精粉
+','0','0','0','0','0','0','0','0','0','0','0','0','0','2021-11-08 10:53:26' from dual 
+
+[2021-11-08 14:21:05]
+
+ORA-12899: 列 "XCT1"."TPSIT24_PK"."COMM_RECV_TIME" 的值太大 (实际值: 19, 最大值: 14)
+
+【SQL:】 insert into TPSIT24_PK ( UNIT_NO,IT_PLAN_NO,MAT_BATCH_NO,MAT_PROD_CNAME,FACT_RATE,FACT_RT,PLAN_RATE,PLAN_RT,PRICE,H2O,TFE,SIO2,CAO,MGO,AL2O3,P,S,K2O,NA2O,LOI,COMM_RECV_TIME ) select  '6','R2021110060
+','D06011010016
+','哈杨粉
+','21','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','2021-11-08 10:57:00' from dual  union all select  '6','R2021110060
+','22222','焦屑
+','23','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','2021-11-08 10:57:00' from dual 
+

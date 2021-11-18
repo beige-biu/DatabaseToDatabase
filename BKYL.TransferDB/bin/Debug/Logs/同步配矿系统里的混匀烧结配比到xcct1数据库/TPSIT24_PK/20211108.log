@@ -1,0 +1,5 @@
+[2021-11-08 14:21:05]
+
+ORA-12899: 列 "XCT1"."TPSIT24_PK"."COMM_RECV_TIME" 的值太大 (实际值: 19, 最大值: 14)   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+

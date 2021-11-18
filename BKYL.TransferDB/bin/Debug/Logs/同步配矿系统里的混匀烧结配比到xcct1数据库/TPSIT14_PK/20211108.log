@@ -1,0 +1,35 @@
+[2021-11-08 13:32:19]
+
+ORA-01017: invalid username/password; logon denied   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 13:34:53]
+
+列“COMM_RECV_TIME    ”不属于表 。   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 13:36:03]
+
+列“COMM_RECV_TIME ”不属于表 。   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 13:40:02]
+
+ORA-01481: 无效的数字格式模型   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 13:46:03]
+
+ORA-01861: 文字与格式字符串不匹配   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 13:55:01]
+
+ORA-01861: 文字与格式字符串不匹配   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 14:01:18]
+
+ORA-01861: 文字与格式字符串不匹配   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+

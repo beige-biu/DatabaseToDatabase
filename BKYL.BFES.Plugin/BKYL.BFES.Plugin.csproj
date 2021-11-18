@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4EB24DC-55F2-42F7-911B-2ED879CBDE5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BKYL.BFES.Plugin</RootNamespace>
+    <AssemblyName>BKYL.BFES.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\BKYL.TransferDB\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BFES.DataAccess">
+      <HintPath>..\DLL\BFES.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="BFES.Utils">
+      <HintPath>..\DLL\BFES.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Job\Job_SinterTrace.cs" />
+    <Compile Include="Job\XC1500_SinterTrace.cs" />
+    <Compile Include="Models\CangInfo.cs" />
+    <Compile Include="Job\BGBFES7\AV05M_LININGTC.cs" />
+    <Compile Include="Job\BGBFES7\CONFIG_L3ANA_ITEMMAP.cs" />
+    <Compile Include="Job\BGBFES7\ConvertMesData.cs" />
+    <Compile Include="Job\BGBFES7\HEARTH_01H.cs" />
+    <Compile Include="Job\BGBFES7\L3ANALYSI.cs" />
+    <Compile Include="Job\BGBFES7\L3MATERIAL.cs" />
+    <Compile Include="Job\BGBFES7\L3TAPPING_IRON_ANA.cs" />
+    <Compile Include="Job\BGBFES7\L3TAPPING_SLAG_ANA.cs" />
+    <Compile Include="Job\BGBFES7\MES_UTIL_QUALITY_MES.cs" />
+    <Compile Include="Job\BGBFES7\TAPPING.cs" />
+    <Compile Include="Job\CalAnaData_AG.cs" />
+    <Compile Include="Job\CalBigData.cs" />
+    <Compile Include="Job\CalDayData_SG.cs" />
+    <Compile Include="Job\CalTenCross07DAVG.cs" />
+    <Compile Include="Job\CalAnalysiData.cs" />
+    <Compile Include="Job\XC1500_CalDayData.cs" />
+    <Compile Include="Job\Job_CalDayData.cs" />
+    <Compile Include="Job\Job_CalDayData_BG7.cs" />
+    <Compile Include="Job\Job_CalDayDate_AG.cs" />
+    <Compile Include="Job\Job_CalHearthBalanceData.cs" />
+    <Compile Include="Job\Job_CalHearthBalanceData_BG7.cs" />
+    <Compile Include="Job\Job_CalIngredientParameter.cs" />
+    <Compile Include="Job\Job_CalOreMatchingTrace.cs" />
+    <Compile Include="Job\Job_CalRMWD_Avg.cs" />
+    <Compile Include="Job\Job_CalSinterMixtureData.cs" />
+    <Compile Include="Job\Job_CalTest_BYQ.cs" />
+    <Compile Include="Job\Job_ConvertMaterialData.cs" />
+    <Compile Include="Job\Job_ConvertMesData.cs" />
+    <Compile Include="Job\Job_ConvertTuyAndAnalysiData.cs" />
+    <Compile Include="Job\Job_HotModel.cs" />
+    <Compile Include="Job\JudgeStaveThemshock.cs" />
+    <Compile Include="Job\NGBFES1_TappingJob.cs" />
+    <Compile Include="Job\NGBFES1_RawFuelJob.cs" />
+    <Compile Include="Job\XC1500_CalHearthBalanceData.cs" />
+    <Compile Include="Job\XC1500_ConvertMesData.cs" />
+    <Compile Include="Job\XC1500_ConvertTuyAndAnalysiData.cs" />
+    <Compile Include="Models\AV01H_TENCROSS_07DAVG.cs" />
+    <Compile Include="Models\AV05M.cs" />
+    <Compile Include="Models\AV05M_LININGTC.cs" />
+    <Compile Include="Models\AV05M_LININGTC_01H.cs" />
+    <Compile Include="Models\AV05M_LININGTC_ALARMINFO.cs" />
+    <Compile Include="Models\AV30S.cs" />
+    <Compile Include="Models\BATCHHIS.cs" />
+    <Compile Include="Models\BATCHHISCODE.cs" />
+    <Compile Include="Models\BATCHHIS_CS.cs" />
+    <Compile Include="Models\BATCHHIS_CS_WEIGHT.cs" />
+    <Compile Include="Models\BATCHHIS_DUMP.cs" />
+    <Compile Include="Models\BATCHHIS_INPUT.cs" />
+    <Compile Include="Models\BATCHHIS_TOTAL.cs" />
+    <Compile Include="Models\BF_ANADATA_08H.cs" />
+    <Compile Include="Models\BF_DAYDATE.cs" />
+    <Compile Include="Models\BF_TEST.cs" />
+    <Compile Include="Models\CONFIG_BFANADATA.cs" />
+    <Compile Include="Models\CONFIG_BFDAYDATA.cs" />
+    <Compile Include="Models\CONFIG_TENCROSS_CAL07D.cs" />
+    <Compile Include="Models\GSPAR400.cs" />
+    <Compile Include="Models\HEARTHBALANCE_IRONDIFF.cs" />
+    <Compile Include="Models\HEARTHBALANCE_IRONDIFF_CLASS.cs" />
+    <Compile Include="Models\HEARTHBALANCE_IRONDIFF_DAY.cs" />
+    <Compile Include="Models\HEARTH_01H.cs" />
+    <Compile Include="Models\L2_PELLET_ANA.cs" />
+    <Compile Include="Models\L3ANALYSI.cs" />
+    <Compile Include="Models\L3MATERIAL.cs" />
+    <Compile Include="Models\L3MATERIAL_CONFIG.cs" />
+    <Compile Include="Models\L3TAPPING_IRON_ANA.cs" />
+    <Compile Include="Models\L3TAPPING_SLAG_ANA.cs" />
+    <Compile Include="Models\LT_MATERIAL_ANALYSI.cs" />
+    <Compile Include="Models\MATERIAL_BALANCE_BAT.cs" />
+    <Compile Include="Models\MATERIAL_BALANCE_CLASS.cs" />
+    <Compile Include="Models\MATERIAL_BALANCE_DAY.cs" />
+    <Compile Include="Models\MES_DAY_IRON.cs" />
+    <Compile Include="Models\MES_PUBLIC_MATERIAL.cs" />
+    <Compile Include="Models\MES_TMMIRF9_IOOP.cs" />
+    <Compile Include="Models\MES_TMP_HOPPER.cs" />
+    <Compile Include="Models\MES_TQMIR21_IOOP.cs" />
+    <Compile Include="Models\MES_TQMIR23_IOOP.cs" />
+    <Compile Include="Models\MES_TQMIR24_IOOP.cs" />
+    <Compile Include="Models\MES_TYMIRE1_IOOP.cs" />
+    <Compile Include="Models\MES_T_MATERIAL_TEAM_YIELDGGL.cs" />
+    <Compile Include="Models\MODEL_VISCOSITY.cs" />
+    <Compile Include="Models\OP_POINT_CONFIG.cs" />
+    <Compile Include="Models\OREBLENDING_TRACE.cs" />
+    <Compile Include="Models\PAR_ROASTER.cs" />
+    <Compile Include="Models\PRIMARYACTIONS.cs" />
+    <Compile Include="Models\R_MATERIAL_PLC_01M.cs" />
+    <Compile Include="Models\R_PELLET_PLC_01M.cs" />
+    <Compile Include="Models\R_PRODUCT_PLC_01M.cs" />
+    <Compile Include="Models\R_ROASTER_PLC_01M.cs" />
+    <Compile Include="Models\SINTER_MIXTURE_DATA.cs" />
+    <Compile Include="Models\SINTER_TRACE.cs" />
+    <Compile Include="Models\STUFF_MATRIX.cs" />
+    <Compile Include="Models\STUFF_MATRIXDATA_CHANGE.cs" />
+    <Compile Include="Models\STUFF_MATRIXDATA_CHANGE_C.cs" />
+    <Compile Include="Models\STUFF_MATRIXDATA_CHANGE_M.cs" />
+    <Compile Include="Models\TAPPING.cs" />
+    <Compile Include="Models\TAPPING_IRON_LAB.cs" />
+    <Compile Include="Models\TAPPING_SLAG_LAB.cs" />
+    <Compile Include="Models\TAPPING_STATIS.cs" />
+    <Compile Include="Models\TC0087.cs" />
+    <Compile Include="Models\TC_ROASTER_BAS_10M.cs" />
+    <Compile Include="Models\TC_ROASTER_WAVE_10M.cs" />
+    <Compile Include="Models\TC_SHIFT_NUMBER.cs" />
+    <Compile Include="Models\TC_YIELD_01H.cs" />
+    <Compile Include="Models\TC_YIELD_15M.cs" />
+    <Compile Include="Models\TPP_MATERIALOUT.cs" />
+    <Compile Include="Models\TPP_QMITEM.cs" />
+    <Compile Include="Models\TPP_QMSAMP.cs" />
+    <Compile Include="Models\TPS_MEASUREMAIN.cs" />
+    <Compile Include="Models\TX_IO_LTXC_SINTER_MAIN.cs" />
+    <Compile Include="Models\TX_IO_LTXC_SINTER_SUB.cs" />
+    <Compile Include="Models\UNIVERSALTE_MONITOR_CONFIG.cs" />
+    <Compile Include="Models\V_TAPPING.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Job\XC1500_3DData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BKYL.Jobs.Base\BKYL.Jobs.Base.csproj">
+      <Project>{d2df0574-2e61-40c9-8419-f7c52370d294}</Project>
+      <Name>BKYL.Jobs.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

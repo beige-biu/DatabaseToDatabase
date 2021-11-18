@@ -1,0 +1,20 @@
+[2021-11-08 11:08:04]
+
+ORA-00904: "DATE_LURU": 标识符无效   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 12:35:02]
+
+ORA-00904: "DATE_LURU": 标识符无效   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 12:36:03]
+
+ORA-00904: "DATE_LURU": 标识符无效   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+
+[2021-11-08 12:38:04]
+
+SELECT IT_PLAN_NO as PBD_NO ,MAT_PROD_CNAME as MATERIAL_NAME ,MAT_BATCH_NO as MATERIAL_CODE ,MAT_RATE as MATERIAL_PERCENTAGE ,CREATE_TIME as RECORD_DATE  FROM  TPSIT24_SJK  alias  where CREATE_TIME>=to_date('2021-11-03 14:00:01','yyyy-mm-dd hh24:mi:ss') and CREATE_TIME<to_date('2021-11-08 10:57:01','yyyy-mm-dd hh24:mi:ss') 语句错误！   在 BKYL.Jobs.Base.Plugin.Job_FilterInsert.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\Job\Job_FilterInsert.cs:行号 167
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabase\BKYL.TransferDB\FrameManage.cs:行号 179
+

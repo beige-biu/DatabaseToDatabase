@@ -1,0 +1,12 @@
+[2021-11-12 11:16:09]
+
+ORA-01740: 标识符中缺失双引号
+
+【SQL:】select max(CREATE_TIME) from  TPSIT24_SJK  alias where "substr(IT_PLAN_NO
+
+[2021-11-12 11:18:05]
+
+ORA-01740: 标识符中缺失双引号
+
+【SQL:】select max(CREATE_TIME) from  TPSIT24_SJK  alias where "substr(IT_PLAN_NO
+

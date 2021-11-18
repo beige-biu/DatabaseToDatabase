@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1013DA27-5AEA-4707-9F0D-5083BD18A93D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BKYL.Sinter.Plugin</RootNamespace>
+    <AssemblyName>BKYL.Sinter.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\BKYL.TransferDB\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BFES.DataAccess, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\BFES.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\DLL\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Burntoreturn.cs" />
+    <Compile Include="Burntoreturn_Min.cs" />
+    <Compile Include="Console_2M.cs" />
+    <Compile Include="Console_Interface_min.cs" />
+    <Compile Include="Console_1M.cs" />
+    <Compile Include="Console_l2_lode.cs" />
+    <Compile Include="ConSole_M_PICAL_BREATH_RESULT_1MIN.cs" />
+    <Compile Include="Console_ReCalculate.cs" />
+    <Compile Include="Console_Related.cs" />
+    <Compile Include="Console_sinter_ana.cs" />
+    <Compile Include="Console_lidu.cs" />
+    <Compile Include="Con_bfes.cs" />
+    <Compile Include="Con_Cpzlfx.cs" />
+    <Compile Include="Con_Plan.cs" />
+    <Compile Include="Con_Sf_Ana.cs" />
+    <Compile Include="Con_SJZL.cs" />
+    <Compile Include="CON_ZNPK.cs" />
+    <Compile Include="energy_tam.cs" />
+    <Compile Include="Job_CalProductQuality.cs" />
+    <Compile Include="material_tam.cs" />
+    <Compile Include="Models\CONFIG_SINCAL_VALUE.cs" />
+    <Compile Include="Models\CONFIG_SYS_VALUE.cs" />
+    <Compile Include="Models\MC_BTPCAL_RESULT_1MIN.cs" />
+    <Compile Include="Models\MC_MICAL_PAR.cs" />
+    <Compile Include="Models\MC_MICAL_RESULT.cs" />
+    <Compile Include="Models\MC_POPCAL_CONSUME_1MIN.cs" />
+    <Compile Include="Models\MC_POPCAL_PAR.cs" />
+    <Compile Include="Models\MC_POPCAL_RESULT_12HOUR.cs" />
+    <Compile Include="Models\MC_POPCAL_RESULT_CONSUME.cs" />
+    <Compile Include="Models\MC_POPCAL_RESULT_DAY.cs" />
+    <Compile Include="Models\MC_POPCAL_RESULT_HOUR.cs" />
+    <Compile Include="Models\MC_RUN_START_TIME.cs" />
+    <Compile Include="Models\MC_SINCAL_CONFIG.cs" />
+    <Compile Include="Models\MC_SINCAL_C_TRIG_CURVE.cs" />
+    <Compile Include="Models\MC_SINCAL_INTERFACE_AVG.cs" />
+    <Compile Include="Models\MC_SINCAL_INTERFACE_TRIG.cs" />
+    <Compile Include="Models\MC_SINCAL_INTERFACE_TRIG_MIN.cs" />
+    <Compile Include="Models\MC_SINCAL_INTERFACE_VA.cs" />
+    <Compile Include="Models\MC_SINCAL_PAR.cs" />
+    <Compile Include="Models\MC_SINCAL_RESULT_1MIN.cs" />
+    <Compile Include="Models\MC_SINCAL_RESULT_PV.cs" />
+    <Compile Include="Models\MC_SINCAL_RESULT_SP.cs" />
+    <Compile Include="Models\MC_SINCAL_TRIG_1MIN.cs" />
+    <Compile Include="Models\MC_SRM_ANA.cs" />
+    <Compile Include="Models\MC_SRM_PAR.cs" />
+    <Compile Include="Models\MC_SRM_RESULT.cs" />
+    <Compile Include="Models\MC_SRM_RESULT_1MIN.cs" />
+    <Compile Include="Models\MC_STOP_START_RECORDER.cs" />
+    <Compile Include="Models\MC_TIME_YIELD.cs" />
+    <Compile Include="Models\MD_BLEND_BATCH_LIST_IN.cs" />
+    <Compile Include="Models\MD_L3_L2_ANA_IN_ORIG.cs" />
+    <Compile Include="Models\MD_PHY_PARTICLE_INFO_IN.cs" />
+    <Compile Include="Models\MD_PLAN_OUTPUT_IN.cs" />
+    <Compile Include="Models\MES_TQMIR21_IOOP.cs" />
+    <Compile Include="Models\MES_TQMIR23_IOOP.cs" />
+    <Compile Include="Models\M_ALI_CHART.cs" />
+    <Compile Include="Models\M_CONFIG_RELATED.cs" />
+    <Compile Include="Models\M_FPQCAL_PAR.cs" />
+    <Compile Include="Models\M_FPQCAL_RESULT.cs" />
+    <Compile Include="Models\M_MATERIAL_ANA.cs" />
+    <Compile Include="Models\M_MATERIAL_COOD.cs" />
+    <Compile Include="Models\M_MES_SINTER.cs" />
+    <Compile Include="Models\M_PICAL_1M_RESULT.cs" />
+    <Compile Include="Models\M_PICAL_2M_RESULT.cs" />
+    <Compile Include="Models\M_PICAL_BREATH_RESULT.cs" />
+    <Compile Include="Models\M_PICAL_PAR.cs" />
+    <Compile Include="Models\M_SINTER_ANA.cs" />
+    <Compile Include="Models\OREBLENDING_TRACE.cs" />
+    <Compile Include="Models\ORE_TRACK_BIGDATA.cs" />
+    <Compile Include="Models\TPSIPDP_IOOP.cs" />
+    <Compile Include="Models\TPSIPDP_IOOP_PLAN.cs" />
+    <Compile Include="Models\T_BLEND_PLC_1MIN.cs" />
+    <Compile Include="Models\T_BURN_COLE_PLC_1MIN.cs" />
+    <Compile Include="Models\T_CLOTH_PLC_1MIN.cs" />
+    <Compile Include="Models\T_ENERGY_TEAM_CONSUMPTION.cs" />
+    <Compile Include="Models\T_MATCH_PLC_1MIN.cs" />
+    <Compile Include="Models\T_MATERIAL_METERING_MAP.cs" />
+    <Compile Include="Models\T_MATERIAL_TEAM_CONSUMPTION.cs" />
+    <Compile Include="Models\T_MA_PGD_PLC_1MIN.cs" />
+    <Compile Include="Models\T_PLC_5S.cs" />
+    <Compile Include="PlanRawConsum.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="PlanSinterDay.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinterIndex.cs" />
+    <Compile Include="SinterOutHistory.cs" />
+    <Compile Include="SolidConsum.cs" />
+    <Compile Include="timepp.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\DLL\MathNet.Numerics.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BKYL.Jobs.Base\BKYL.Jobs.Base.csproj">
+      <Project>{D2DF0574-2E61-40C9-8419-F7C52370D294}</Project>
+      <Name>BKYL.Jobs.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

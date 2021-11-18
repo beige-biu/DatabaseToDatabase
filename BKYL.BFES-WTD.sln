@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BKYL.Jobs.Base", "BKYL.Jobs.Base\BKYL.Jobs.Base.csproj", "{D2DF0574-2E61-40C9-8419-F7C52370D294}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BKYL.TransferDB-WTD", "BKYL.TransferDB\BKYL.TransferDB-WTD.csproj", "{2588FAC2-A034-422E-AA9B-E5EAE179E1E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BKYL.WTD.Plugin", "BKYL.WTD.Plugin\BKYL.WTD.Plugin.csproj", "{03AB8B4F-B6A2-4452-9B0F-42073C776C09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2DF0574-2E61-40C9-8419-F7C52370D294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2DF0574-2E61-40C9-8419-F7C52370D294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2DF0574-2E61-40C9-8419-F7C52370D294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2DF0574-2E61-40C9-8419-F7C52370D294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2588FAC2-A034-422E-AA9B-E5EAE179E1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2588FAC2-A034-422E-AA9B-E5EAE179E1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2588FAC2-A034-422E-AA9B-E5EAE179E1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2588FAC2-A034-422E-AA9B-E5EAE179E1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03AB8B4F-B6A2-4452-9B0F-42073C776C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03AB8B4F-B6A2-4452-9B0F-42073C776C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03AB8B4F-B6A2-4452-9B0F-42073C776C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03AB8B4F-B6A2-4452-9B0F-42073C776C09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

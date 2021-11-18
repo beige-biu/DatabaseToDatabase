@@ -1,0 +1,5 @@
+[2021-11-18 10:35:21]
+
+update  T_MATERIAL_TEAM_YIELD   set TESTFLAG  =1  where TEAM_BEGIN_TIME>=to_date('2021-10-19 00:00:01','yyyy-mm-dd hh24:mi:ss') and TEAM_BEGIN_TIME<to_date('2021-11-18 03:00:01','yyyy-mm-dd hh24:mi:ss')  andTESTFLAG  = 0 and TESTFLAG != 1语句错误！   在 BKYL.Jobs.Base.Plugin.Job_FilterInsertbyFlag.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\Job\Job_FilterInsertByFlag.cs:行号 237
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.TransferDB\FrameManage.cs:行号 179
+
