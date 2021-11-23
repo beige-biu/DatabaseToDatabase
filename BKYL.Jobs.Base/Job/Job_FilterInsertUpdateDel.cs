@@ -350,7 +350,7 @@ namespace BKYL.Jobs.Base.Plugin
                     else
                     {
                         temp += strs[i] + " = " + "'" + item[strs[i]] + "'";
-                        temp += " and";
+                        temp += " and ";
                     }
                 }
                 temp = temp.Remove(temp.Length - 3, 3);

@@ -27,6 +27,10 @@ namespace BKYL.Jobs.Base.Common
         /// 将标志位不为1的数据插入
         ///</summary>
         FilterInsertByFlag = 6,
+        ///<summary>
+        ///判断COMM_SND_FLAG的值来进行数据同步
+        ///</summary>
+        FilterInsertBySndFlag = 7,
         /// <summary>
         /// 自定义插入
         /// </summary>

@@ -47,6 +47,9 @@ namespace BKYL.Jobs.Base.Common
                 case JobType.FilterInsertByFlag:
                     baseJob = new Plugin.Job_FilterInsertbyFlag();
                     break;
+                case JobType.FilterInsertBySndFlag:
+                    baseJob = new Plugin.Job_FilterInsertbySndFlag();
+                    break;
                 ///定制的需要反射出来
                 case JobType.CustomJob:
                     baseJob = (BaseJob)ReflectFactory.CreateFullNameObject(item.DllName, item.ClassName);

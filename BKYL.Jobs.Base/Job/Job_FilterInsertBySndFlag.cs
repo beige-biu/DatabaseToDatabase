@@ -5,7 +5,7 @@ using System.Data;
 
 namespace BKYL.Jobs.Base.Plugin
 {
-    public class Job_FilterInsertbyFlag : BaseJob
+    public class Job_FilterInsertbySndFlag : BaseJob
     {
 
         public override void Dispose()
@@ -18,7 +18,7 @@ namespace BKYL.Jobs.Base.Plugin
 
         }
 
-       
+        
         public override void RunTask(DateTime currentTime)
         {
 
@@ -149,87 +149,145 @@ namespace BKYL.Jobs.Base.Plugin
                     }
                 }
 
-                #endregion
-
-                #region 插入数据
-                bool issuccess = false;
-                using (IDataBase iDataBase = DalFactory.GreateIDataBase(T_DBSource))
+                for (int i = dt.Rows.Count - 1; i >= 0; i--)
                 {
-                    try
+                    string sqlstr = "";//执行sql语句
+                    string sqldel = "";//删除的sql语句
+                    string aaa = "";
+                    string bbb = "";
+                    string ccc = ""; //主键的值
+                    string ddd = "";
+                    string eee = "";
+                    //获取每一行的COMM_SND_FLAG的值是什么I或者U或者D
+                    string COMM_SND_FLAG = dt.Rows[i]["COMM_SND_FLAG"].ToString().ToUpper();
+
+
+
+                    //插入目标表
+                    if (COMM_SND_FLAG == "I")
                     {
-                        iDataBase.BeginTran();
-                        issuccess = iDataBase.BulkInsert(tableConfig.T_TableName, Columns, Columns, dt, tableConfig.IsExistTri);
-                        iDataBase.CommitTran();
-                        log += string.Format("{0}表插入成功 {1}条!", tableConfig.T_TableName, dt.Rows.Count);
+
+                        //获取i这一行的所有数据，插入目标表
+                        for (int j = 0; j <= dt.Columns.Count - 1; j++)
+                        {
+                            //判断一下，如果是最后一个字段，则删除最后那个逗号
+                            if (j == dt.Columns.Count - 1)
+                            {
+                                aaa = "'" + dt.Rows[i][j].ToString() + "'";
+                            }
+                            else
+                            {
+                                aaa = "'" + dt.Rows[i][j].ToString() + "',";
+                            }
+
+                            bbb += aaa;
+                        }
+
+                        for (int j = 0; j <= dt.Columns.Count - 1; j++)
+                        {
+
+                            ddd = dt.Columns[j].ColumnName.ToString() + "='" + dt.Rows[i][j].ToString() + "'";
+                            ccc = dt.Rows[i][tableConfig.T_TablePrimaryKey].ToString();
+                            //判断一下，如果是最后一个字段，则删除最后那个逗号
+                            if (j == dt.Columns.Count - 1)
+                            {
+                                ddd = dt.Columns[j].ColumnName.ToString() + "='" + dt.Rows[i][j].ToString() + "'";
+                            }
+                            else
+                            {
+                                ddd = ddd = dt.Columns[j].ColumnName.ToString() + "='" + dt.Rows[i][j].ToString() + "'and ";
+                            }
+                            eee += ddd;
+                        }
+                        sqldel = "delete " + tableConfig.T_TableName + " where " + eee;
+                        sqlstr = "insert into " + tableConfig.T_TableName + "  values (" + bbb + " )";
+                        //执行SQL语句
+                        using (IDataBase iDataBase = DalFactory.GreateIDataBase(T_DBSource))
+                        {
+                            //先删除目标表的数据
+                            iDataBase.ExecuteCommand(sqldel);
 
 
-                        UpdateFlag(iDataBase, issuccess, tableConfig.UpdateSql, ref log);
+                            //在目标表插入源表配置时间段的
+                            iDataBase.ExecuteCommand(sqlstr);
+                        }
+
                     }
-                    catch (Exception ex)
+                    //修改目标表
+                    else if (COMM_SND_FLAG == "U")
                     {
-                        iDataBase.RollbackTran();
-                        issuccess = false;
-                        throw ex;
+
+                        ////获取i这一行的所有数据
+                        for (int j = 0; j <= dt.Columns.Count - 1; j++)
+                        {
+
+                            aaa = dt.Columns[j].ColumnName.ToString() + "='" + dt.Rows[i][j].ToString() + "'";
+                            ccc = dt.Rows[i][tableConfig.T_TablePrimaryKey].ToString();
+                            //判断一下，如果是最后一个字段，则删除最后那个逗号
+                            if (j == dt.Columns.Count - 1)
+                            {
+                                aaa = dt.Columns[j].ColumnName.ToString() + "='" + dt.Rows[i][j].ToString() + "'";
+                            }
+                            else
+                            {
+                                aaa = aaa = dt.Columns[j].ColumnName.ToString() + "='" + dt.Rows[i][j].ToString() + "',";
+                            }
+                            bbb += aaa;
+
+
+                        }
+                        //set 字段名='值' where主键=xxx
+
+                        sqlstr = "update " + tableConfig.T_TableName + " set " + bbb + " where " + tableConfig.T_TablePrimaryKey + " ='" + ccc + "'";
+
+
+                        //执行SQL语句
+                        using (IDataBase iDataBase = DalFactory.GreateIDataBase(T_DBSource))
+                        {
+
+                            //在目标表插入源表配置时间段的
+                            iDataBase.ExecuteCommand(sqlstr);
+                        }
+
                     }
+                    //删除目标表
+                    else if (COMM_SND_FLAG == "D")
+                    {
 
 
+
+                        for (int j = 0; j <= dt.Columns.Count - 2; j++)
+                        {
+
+                            ddd = dt.Columns[j].ColumnName.ToString() + "='" + dt.Rows[i][j].ToString() + "'";
+                            ccc = dt.Rows[i][tableConfig.T_TablePrimaryKey].ToString();
+                            //判断一下，如果是最后一个字段，则删除最后那个逗号
+                            if (j == dt.Columns.Count - 2)
+                            {
+                                ddd = dt.Columns[j].ColumnName.ToString() + "='" + dt.Rows[i][j].ToString() + "'";
+                            }
+                            else
+                            {
+                                ddd = ddd = dt.Columns[j].ColumnName.ToString() + "='" + dt.Rows[i][j].ToString() + "'and ";
+                            }
+                            eee += ddd;
+                        }
+                        sqldel = "delete " + tableConfig.T_TableName + " where " + eee;
+                        using (IDataBase iDataBase = DalFactory.GreateIDataBase(T_DBSource))
+                        {
+
+                            //在目标表删除
+                            iDataBase.ExecuteCommand(sqldel);
+                        }
+
+
+                    }
                 }
 
 
-
-
-
-
                 #endregion
-                //置标志位
-
-                using (IDataBase iDataBase = DalFactory.GreateIDataBase(S_DBSource))
-                {
-
-                    string sql = null;
-
-                    try
-                    {
-                        //获取源表的标志位字段名称
-                        string flag = tableConfig.S_Filter;//csv中源表筛选条件
-                        string[] sArray = flag.Split('!');
-                        flag = sArray[0]; //获取源表标志位字段
-                        if (IsDateTimeType)
-                        {
-                            
-                            //修改源表标志位
-                            sql = string.Format("update {0} ", tableConfig.S_TableName);
-                            sql += string.Format(tableConfig.UpdateSql + " set "+ flag + " =1  where {0}>={1} and {0}<{2}  "  , tableConfig.S_TableSequential
-                         , DataBaseFactory.ConvertTimeString(T_Max_Date.AddSeconds(1), S_DBSource.DBType), DataBaseFactory.ConvertTimeString(S_Max_Date.AddSeconds(1), S_DBSource.DBType));
-                        }
-                        else
-                        {
-                            //修改源表标志位
-                            sql = string.Format("update {0} ", tableConfig.S_TableName);
-                            sql = string.Format(tableConfig.UpdateSql + " set " + flag + " =1  where {0}>{1} and {0}<={2}  " , tableConfig.S_TableSequential
-                        , T_Max_Int, S_Max_Int);
-                        }
-                        if (!string.IsNullOrEmpty(tableConfig.S_Filter))
-                        {
-                            sql += " and " + tableConfig.S_Filter;
-                        }
-
-                        iDataBase.ExecuteCommand(sql);
 
 
-                    }
-                    catch (Exception ex)
-                    {
-                        if (ex.Message != null && ex.Message.Contains("*&*&"))
-                        {
-                            throw ex;
-                        }
-                        else
-                        {
-                            throw new Exception(sql + "语句错误！");
-                        }
-                    }
-                }
 
                 Outputlog(log);
             }
