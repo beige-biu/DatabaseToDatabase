@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -56,6 +57,7 @@
     <Compile Include="Job\Job_CalcTable_01H.cs" />
     <Compile Include="Job\Job_CalFormula.cs" />
     <Compile Include="Job\Job_ClearLog.cs" />
+    <Compile Include="Job\Job_FilterInsertbyTymir21Flag.cs" />
     <Compile Include="Job\Job_FilterInsertBySndFlag.cs" />
     <Compile Include="Job\Job_FilterInsertByFlag.cs" />
     <Compile Include="Job\Job_FilterInsert.cs" />

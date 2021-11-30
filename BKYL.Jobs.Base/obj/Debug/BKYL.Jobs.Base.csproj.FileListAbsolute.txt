@@ -25,7 +25,6 @@ G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\obj\Debug\BKYL.Jobs.B
 G:\400烧结智能系统\DatabaseToDatabase\BKYL.Jobs.Base\obj\Debug\BKYL.Jobs.Base.pdb
 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.TransferDB\bin\Debug\BKYL.Jobs.Base.dll
 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.TransferDB\bin\Debug\BKYL.Jobs.Base.pdb
-G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\obj\Debug\BKYL.Jobs.Base.csprojAssemblyReference.cache
 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\obj\Debug\BKYL.Jobs.Base.csproj.CoreCompileInputs.cache
 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\obj\Debug\BKYL.Jobs.Base.csproj.CopyComplete
 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\obj\Debug\BKYL.Jobs.Base.dll

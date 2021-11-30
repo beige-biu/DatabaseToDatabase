@@ -81,7 +81,6 @@ namespace BKYL.Jobs.Base.Plugin
                 {
                     S_Max_Date = S_Max.ToDate();
                     T_Max_Date = T_Max.ToDate();
-                    //T_Max_Date = S_Max_Date.AddDays(-1);
                     if (S_Max_Date <= T_Max_Date)
                     {
                         return;

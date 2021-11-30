@@ -31,6 +31,10 @@ namespace BKYL.Jobs.Base.Common
         ///判断COMM_SND_FLAG的值来进行数据同步
         ///</summary>
         FilterInsertBySndFlag = 7,
+        ///<summary>
+        ///同步xct1tymir21数据
+        FilterInsertbyTymir21Flag = 21,
+        /// </summary>
         /// <summary>
         /// 自定义插入
         /// </summary>
