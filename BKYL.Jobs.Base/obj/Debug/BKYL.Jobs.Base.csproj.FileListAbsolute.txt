@@ -29,3 +29,4 @@ G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\obj\Debug\BKYL
 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\obj\Debug\BKYL.Jobs.Base.csproj.CopyComplete
 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\obj\Debug\BKYL.Jobs.Base.dll
 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\obj\Debug\BKYL.Jobs.Base.pdb
+G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\obj\Debug\BKYL.Jobs.Base.csprojAssemblyReference.cache

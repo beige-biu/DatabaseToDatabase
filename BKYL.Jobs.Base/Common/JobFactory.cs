@@ -53,6 +53,9 @@ namespace BKYL.Jobs.Base.Common
                 case JobType.FilterInsertbyTymir21Flag:
                     baseJob = new Plugin.Job_FilterInsertbyTymir21Flag();
                     break;
+                case JobType.FilterInsert360:
+                    baseJob = new Plugin.Job_FilterInsert360();
+                    break;
                 ///定制的需要反射出来
                 case JobType.CustomJob:
                     baseJob = (BaseJob)ReflectFactory.CreateFullNameObject(item.DllName, item.ClassName);

@@ -34,7 +34,10 @@ namespace BKYL.Jobs.Base.Common
         ///<summary>
         ///同步xct1tymir21数据
         FilterInsertbyTymir21Flag = 21,
+        ///<summary>
+        ///把360的烧结开堆时间写到配矿库
         /// </summary>
+        FilterInsert360 = 360,
         /// <summary>
         /// 自定义插入
         /// </summary>
