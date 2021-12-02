@@ -41,7 +41,7 @@ namespace BKYL.Jobs.Base.Plugin
                         {
                             sql += " where " + tableConfig.S_Filter;
                         }
-                        S_Max = iDataBase.GetScalar(sql); //11-27 6:00:00
+                        S_Max = iDataBase.GetScalar(sql); 
                         
                     }
                     catch (Exception ee)
@@ -54,6 +54,9 @@ namespace BKYL.Jobs.Base.Plugin
                     try
                     {
                         T_Max = iDataBase.GetScalar(string.Format("select max({0}) from {1} ", tableConfig.T_TableSequential, tableConfig.T_TableName));
+                        if (T_Max.ToString()=="") {
+                            T_Max = DateTime.Now.AddDays(-30).Date.ToString();
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -109,9 +112,12 @@ namespace BKYL.Jobs.Base.Plugin
                 using (IDataBase iDataBase = DalFactory.GreateIDataBase(S_DBSource))
                 {
                     string sql = null;
-                    sql = "SELECT distinct REPLACE(INGREDIENT_NO,'D','H') as PBD_NO ,DATE_SHIJI +4/24 as BEGIN_STORE_DATE  FROM  T_XSL2_INGREDIENT_PEIBI    where DATE_SHIJI>=" +"TO_DATE('"+ T_Max +"','yyyy-mm-dd hh24:mi:ss')"+ " and DATE_SHIJI<=TO_DATE(' " + S_Max+"','yyyy-mm-dd hh24:mi:ss')";
                     try
                     {
+                        sql = "SELECT distinct REPLACE(INGREDIENT_NO,'D','H') as PBD_NO ,DATE_SHIJI +4/24 as BEGIN_STORE_DATE  FROM  T_XSL2_INGREDIENT_PEIBI    where DATE_SHIJI>=" +"TO_DATE('"+ T_Max +"','yyyy-mm-dd hh24:mi:ss')"+ " and DATE_SHIJI<=TO_DATE(' " + S_Max+"','yyyy-mm-dd hh24:mi:ss')";
+
+                        sql += " order by BEGIN_STORE_DATE desc";
+
                         //if (IsDateTimeType)
                         //{
                         //    sql = string.Format(tableConfig.SelectSql + " where {0}>={1} and {0}<{2} ", tableConfig.S_TableSequential
