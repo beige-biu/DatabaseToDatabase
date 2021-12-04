@@ -353,7 +353,9 @@ namespace BKYL.Jobs.Base.Plugin
                         temp += " and ";
                     }
                 }
-                temp = temp.Remove(temp.Length - 3, 3);
+                //后加的
+                //temp = temp.Remove(temp.Length - 3, 3);
+                temp = temp.Remove(temp.Length - 4, 3); //( PBD_NO = 'R2021120065过渡' and MATERIAL_CODE = 'D06011010004' 
                 temp += ") or";
                 tempDele += temp;
             }

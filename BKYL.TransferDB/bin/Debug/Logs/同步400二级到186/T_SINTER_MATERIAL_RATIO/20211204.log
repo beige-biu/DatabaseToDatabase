@@ -1,0 +1,5 @@
+[2021-12-04 09:55:01]
+
+ORA-00907: 缺失右括号   在 BKYL.Jobs.Base.Plugin.Job_FilterInsertUpdateDel.RunTask(DateTime currentTime) 位置 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.Jobs.Base\Job\Job_FilterInsertUpdateDel.cs:行号 252
+   在 BKYL.TransferDB.FrameManage.<>c__DisplayClass10_0.<CreatTask>b__0() 位置 G:\400烧结智能系统\DatabaseToDatabasebyWenyu\BKYL.TransferDB\FrameManage.cs:行号 179
+

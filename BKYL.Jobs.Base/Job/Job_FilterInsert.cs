@@ -53,6 +53,10 @@ namespace BKYL.Jobs.Base.Plugin
                     try
                     {
                         T_Max = iDataBase.GetScalar(string.Format("select max({0}) from {1} ", tableConfig.T_TableSequential, tableConfig.T_TableName));
+                        if (T_Max.ToString() == "")
+                        {
+                            T_Max = DateTime.Now.AddDays(-30).Date.ToString();
+                        }
                     }
                     catch (Exception ex)
                     {

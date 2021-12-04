@@ -2,6 +2,7 @@
 using BKYL.Jobs.Base.Utils;
 using System;
 using System.Data;
+using System.Data.OracleClient;
 
 namespace BKYL.Jobs.Base.Plugin
 {
@@ -133,8 +134,24 @@ namespace BKYL.Jobs.Base.Plugin
                         //    sql += " and " + tableConfig.S_Filter;
                         //}
                         dt = iDataBase.GetDataTable(sql);
+                      
                         //转换中文乱码
                         dt = RemoveDump(dt);
+                        //数据库连接串
+                        string constr = "User Id = ORALTL2_ST; Password=oraltl2_st;Data Source = (DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 127.0.0.1)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = ORCL)))";
+                        //先取出目标表的最新一条的时间
+                        T_Max = T_Max.ToDate();
+                        //取出时间
+                        for (int i = dt.Rows.Count - 1; i >= 0; i--)
+                        {
+                            DateTime end_store_date = dt.Rows[i]["BEGIN_STORE_DATE"].ToDate();
+                            string updatesql = "update T_SINTER_MATERIAL_RATIO_360 set END_STORE_DATE =TO_DATE('" + end_store_date+"','yyyy-mm-dd hh24:mi:ss')"+" where BEGIN_STORE_DATE =TO_DATE(' "+T_Max+"','yyyy-mm-dd hh24:mi:ss')" ;
+                            ExcuteSQL1(constr, updatesql);
+                        }
+
+                        
+                        
+
                     }
                     catch (Exception ex)
                     {
@@ -188,6 +205,38 @@ namespace BKYL.Jobs.Base.Plugin
                 }
                 log = null;
             }
+        }
+
+
+        public static int ExcuteSQL1(string strUDL, string SQL)
+        {
+            //防止插入sql语句中文乱码
+            System.Environment.SetEnvironmentVariable("NLS_LANG", "SIMPLIFIED CHINESE_CHINA.ZHS16GBK");
+            int i_ES = 0;
+            OracleConnection SqlConnection = null;
+            OracleCommand SqlServerCommand = null;
+            try
+            {
+                SqlConnection = new OracleConnection(strUDL);
+                SqlConnection.Open();
+                SqlServerCommand = SqlConnection.CreateCommand();
+                SqlServerCommand.CommandType = CommandType.Text;
+                SqlServerCommand.CommandText = SQL;
+                SqlServerCommand.ExecuteNonQuery();
+            }
+            catch (Exception ExFail)
+            {
+                i_ES = 1;
+            }
+            finally
+            {
+                if (SqlConnection.State.ToString() == "Open")
+                {
+                    if (i_ES != 1) { i_ES = 2; }
+                    SqlConnection.Close();
+                }
+            }
+            return i_ES;
         }
 
         public override void RunTaskException(DateTime currentTime, Exception exception)
